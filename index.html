@@ -37,6 +37,51 @@
             max-width: 1200px;
             height: auto;
         }
+        .projecten {
+            padding: 40px 20px;
+        }
+        .projecten h2 {
+            margin-bottom: 20px;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+        }
+        .project-kaart {
+            background-color: #101828;
+            border: 1px solid #2a3a55;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .project-kaart:hover {
+            transform: translateY(-4px);
+            border-color: #4a9eff;
+        }
+        .project-kaart img {
+            max-width: 80px;
+            height: auto;
+            margin-bottom: 12px;
+        }
+        .project-kaart span {
+            display: block;
+            font-weight: bold;
+        }
+        @media (max-width: 700px) {
+            .project-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 450px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -48,7 +93,20 @@
             <img src="chronos-banner.png" alt="Chronos Machine banner" class="banner">
         </div>
     </div>
-    <h1 style="padding: 0 20px;">Welkom bij Pharao</h1>
-    <p style="padding: 0 20px;">Mijn eerste website, live via GitHub en Vercel.</p>
+
+    <div class="projecten">
+        <h2>Projecten</h2>
+        <div class="project-grid">
+            <a href="#" class="project-kaart"><span>Project 1</span></a>
+            <a href="#" class="project-kaart"><span>Project 2</span></a>
+            <a href="#" class="project-kaart"><span>Project 3</span></a>
+            <a href="#" class="project-kaart"><span>Project 4</span></a>
+            <a href="#" class="project-kaart"><span>Project 5</span></a>
+            <a href="#" class="project-kaart"><span>Project 6</span></a>
+            <a href="#" class="project-kaart"><span>Project 7</span></a>
+            <a href="#" class="project-kaart"><span>Project 8</span></a>
+            <a href="#" class="project-kaart"><span>Project 9</span></a>
+        </div>
+    </div>
 </body>
 </html>
