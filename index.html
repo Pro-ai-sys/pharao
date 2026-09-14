@@ -50,27 +50,27 @@
             max-width: 900px;
         }
         .project-kaart {
-            background-color: #101828;
-            border: 1px solid #2a3a55;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            aspect-ratio: 1 / 1;
             border-radius: 16px;
-            padding: 24px;
-            text-align: center;
             text-decoration: none;
-            color: white;
+            background: linear-gradient(135deg, #101828, #1a2740);
+            border: 1px solid #2a3a55;
             transition: transform 0.2s, border-color 0.2s;
         }
         .project-kaart:hover {
             transform: translateY(-4px);
             border-color: #4a9eff;
         }
-        .project-kaart img {
-            max-width: 80px;
-            height: auto;
-            margin-bottom: 12px;
-        }
         .project-kaart span {
-            display: block;
+            color: white;
             font-weight: bold;
+            font-size: 1.1em;
+            text-align: center;
+            padding: 12px;
         }
         @media (max-width: 700px) {
             .project-grid {
